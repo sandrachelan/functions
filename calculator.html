@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="fn">
+     <input type="text" id="ln" ><br>
+   <br> <input type="text" id="ans"><br>
+   
+   <div>
+    <button onclick="add()">+</button>
+    <button onclick="subtract()">-</button>
+    </div>
+    <div>
+    <button onclick="divide()">/</button>
+    <button onclick="multiply()">*</button>
+    </div>
+    <input type="text" id="ans">
+
+
+    <script>
+
+let add = ()=> {
+    var x =parseFloat(document.getElementById("fn").value)
+    var y =parseFloat(document.getElementById("ln").value)
+    var xyz = x+y
+    document.getElementById("ans").value=xyz
+}
+let subtract = ()=> {
+    var a =parseFloat(document.getElementById("fn").value)
+    var b =parseFloat(document.getElementById("ln").value)
+    var abc = a-b
+    document.getElementById("ans").value=abc
+}
+
+let divide = ()=> {
+    var p=parseFloat(document.getElementById("fn").value)
+    var q=parseFloat(document.getElementById("ln").value)
+    var pqr= p/q
+    document.getElementById("ans").value=pqr
+}
+
+let multiply= ()=> {
+    var m =parseFloat(document.getElementById("fn").value)
+    var n =parseFloat(document.getElementById("ln").value)
+    var mno = m*n
+    document.getElementById("ans").value=mno
+}
+
+
+
+        
+    </script>
+
+
+
+    
+
+    
+</body>
+</html>
